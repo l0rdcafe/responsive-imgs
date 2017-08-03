@@ -58,12 +58,15 @@ body {
 
   p {
     display: block;
-    padding-top: 8%;
     margin: auto;
     width: 40%;
+    float: right;
+    margin-right: 2%;
+    text-align: center;
 
     @media (min-width: $break-mdm) {
-      float: right;
+      margin-right: 2%;
+      text-align: right;
     }
   }
 }
@@ -168,37 +171,23 @@ body {
 /* Module Styles */
 
 .banner {
-  background-image: url("../images/IMG_9552_sml.jpg");
+  background-image: url("../images/IMG_9552_mdm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
 
   @media (min-width: $break-mdm) {
-    background: url("../images/IMG_9552_mdm.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $break-lrg) {
     background: url("../images/IMG_9552_lrg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   p {
-    text-align: center;
     color: $silver;
-    font-size: 2.33rem;
+    font-size: 3rem;
     font-weight: 100;
-    font-family: "Merriweather", serif;
 
     @media (min-width: $break-mdm) {
-      font-size: 3.25rem;
-      text-align: right;
-      margin-right: 2%;
-    }
-
-    @media (min-width: $break-lrg) {
       font-size: 4.5rem;
     }
   }
