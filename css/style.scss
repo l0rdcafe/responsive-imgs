@@ -1,0 +1,222 @@
+@import 'cc-ss_colors';
+
+$break-lrg: 1000px;
+$break-mdm: 918px;
+
+/* Base Styles */
+
+body {
+  max-width: 100vw;
+  background-color: $silver;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  small {
+    opacity: 0.5;
+  }
+
+  figcaption {
+    opacity: 0.5;
+    color: $black;
+    font-size: 65%;
+    text-align: left;
+    width: 90%;
+    font-weight: 100;
+    margin-left: 5%;
+
+    @media (min-width: $break-mdm) {
+      margin-left: 2%;
+    }
+  }
+}
+
+/* Layout Styles */
+
+.l-banner {
+  max-width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  @media (min-width: $break-mdm) {
+    min-width: 100%;
+    height: 70vh;
+  }
+
+  @media (min-width: $break-lrg) {
+    min-width: 100%;
+    height: 80vh;
+  }
+
+  p {
+    display: block;
+    padding-top: 8%;
+    margin: auto;
+    width: 40%;
+
+    @media (min-width: $break-mdm) {
+      float: right;
+    }
+  }
+}
+
+.l-container {
+  min-height: 100vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 4em;
+
+  figure {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    margin-bottom: 1em;
+
+    @media (min-width: $break-mdm) {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+
+    figcaption {
+      max-width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+
+      @media (min-width: $break-mdm) {
+        width: 25%;
+        padding: 2%;
+        height: 84%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .f-left img {
+    float: none;
+
+    @media (min-width: $break-mdm) {
+      float: left;
+    }
+  }
+
+  .f-left figcaption {
+    float: none;
+
+    @media (min-width: $break-mdm) {
+      float: left;
+      text-align: left;
+      margin-left: 2%;
+      border-left: 1px solid lighten($gray, 10%);
+    }
+  }
+
+  .f-right img {
+    float: none;
+
+    @media (min-width: $break-mdm) {
+      float: right;
+    }
+  }
+
+  .f-right figcaption {
+    float: none;
+
+    @media (min-width: $break-mdm) {
+      float: right;
+      text-align: right;
+      margin-right: 2%;
+      border-right: 1px solid lighten($gray, 10%);
+    }
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: $break-mdm) {
+      width: 65%;
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Module Styles */
+
+.banner {
+  background-image: url("../images/IMG_9552_sml.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+
+  @media (min-width: $break-mdm) {
+    background: url("../images/IMG_9552_mdm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $break-lrg) {
+    background: url("../images/IMG_9552_lrg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  p {
+    text-align: center;
+    color: $silver;
+    font-size: 2.33rem;
+    font-weight: 100;
+    font-family: "Merriweather", serif;
+
+    @media (min-width: $break-mdm) {
+      font-size: 3.25rem;
+      text-align: right;
+      margin-right: 2%;
+    }
+
+    @media (min-width: $break-lrg) {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.container {
+  font-size: 1.5rem;
+
+  figcaption {
+    font-weight: 100;
+    font-size: 1.85rem;
+
+    @media (min-width: $break-mdm) {
+      font-size: 2.25rem;
+    }
+  }
+
+  footer {
+    background-color: $silver;
+  }
+}
